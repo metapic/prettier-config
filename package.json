@@ -1,6 +1,6 @@
 {
   "name": "@metapic/prettier-config",
-  "version": "1.0.0-rc.1",
+  "version": "0.0.0-development",
   "description": "Standard Prettier configuration for Metapic projects.",
   "type": "module",
   "exports": "./dist/index.js",
