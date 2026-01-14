@@ -8,6 +8,13 @@ const config: Config = {
   trailingComma: 'all',
   overrides: [
     {
+      files: ['**/*.json'],
+      options: {
+        printWidth: 80,
+        parser: 'json',
+      },
+    },
+    {
       files: [
         '**/*.jsonc',
         '**/tsconfig.json',
@@ -17,8 +24,7 @@ const config: Config = {
         // '.devcontainer/*.json',
       ],
       options: {
-        singleQuote: false,
-        trailingComma: 'all',
+        printWidth: 80,
         parser: 'jsonc',
       },
     },
