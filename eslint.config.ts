@@ -9,7 +9,4 @@ export default defineConfig({
       ...globals.node,
     },
   },
-  rules: {
-    // any overrides or rule customizations
-  },
 })
