@@ -1,17 +1,22 @@
 import { type Config } from 'prettier'
 
 const config: Config = {
-  printWidth: 140,
+  printWidth: 100,
   tabWidth: 2,
   semi: false,
   singleQuote: true,
   trailingComma: 'all',
   overrides: [
     {
+      files: ['*.tsx', '*.jsx', '*.vue'],
+      options: {
+        printWidth: 140,
+      },
+    },
+    {
       files: ['**/*.json'],
       options: {
         printWidth: 80,
-        parser: 'json',
       },
     },
     {
